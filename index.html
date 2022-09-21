@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Currency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/open-props">
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body id="body">
+    <!-- navbar -->
+    <button class="top display">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="nav">
+        <div class="search">
+            <input type="text" id="searchValue" placeholder="search">
+        </div>
+        <nav id="nav">
+            <li class="li"><a href="index.html">Coins</a> </li>
+            <li class="li"><a href="reports.html">Real-Time Reports</a> </li>
+            <li class="li"><a href="about.html">About</a></li>
+        </nav>
+        <div class="darkLightInput">
+            <input type="checkbox" unchecked  class="darkmode" id="darkmodeCheck" >
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <h1 class="h1">Crypto Currency</h1>
+        <div class="chart display">
+            <canvas id="myChart"></canvas>
+          </div>
+        <img class="bannerImg" src="img/banner.png" alt="">
+    </header>
+    <button class="btn" id="reports">
+    GET REPORTS
+    </button> 
+  
+    <!-- <div class="load-more">
+        <button class="btn" id="loadMore">
+            LOAD MORE
+        </button>
+    </div> -->
+
+   <main class="main">
+        <!-- <div class="card">
+            <input type="checkbox" name="" id="checkbox">
+        </div> -->
+      
+    </main>
+
+    <!-- loading -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+   
+    <div id="modal" class="modal display">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-coins">
+         
+            </div>
+        </div>
+      </div>
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
